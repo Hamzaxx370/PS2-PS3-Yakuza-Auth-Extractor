@@ -52,7 +52,7 @@ for FilePath in FilePaths:
         elif BoneCount == 56:
             name="Face"
         else:
-            name="????"
+            name="Unknown"
         OMT_File = reader.read_bytes(OMT_Size)
         OUTPUTPATH3 = os.path.join(OUTPUTDIR,f"Character" + "-" + (str(o))  + "-" + name + ".omt")
         with open (OUTPUTPATH3,mode="wb")as output3:
